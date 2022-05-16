@@ -1,0 +1,252 @@
+Jan Cychnerski is a :
+Great teacher
+Good teacher
+Average teacher
+Bad teacher
+A
+Which of the following methods are used in supervised machine learning?
+Classification
+Clustering
+Regression
+Dimension reduction
+A C
+Which of the following methods are used in unsupervised machine learning?
+Classification
+Association
+Clustering
+Regression
+B C
+What are the types of hyperparameters?
+Model parameters
+Training parameters
+Language parameters
+Data parameters
+A B D
+Select quality measures used for detection-segmentation:
+Dice-coefficient
+Intersection Over Union
+Loss
+Confusion Matrix
+A B
+What is this type of detection/segmentation? [Image of cats with a outline on them]
+Points
+Rectangle-like
+Masks
+Separation
+C
+What does NLP stand for in machine learning?
+Natural linear plan
+Neural linear processing
+Natural language processing
+Non linguistic painting
+C
+What are some optimization methods in Machine Learning?
+Monte Carlo
+Genetic methods
+Simulated annealing
+Gradient methods
+A B C D
+Which are examples of real life data distributions?
+Linear distribution
+Power law distribution
+Constant distribution
+Normal distribution
+B D
+What does ASR stand for in machine learning?
+Automated Speech Recognition
+Additional Score Report
+Auto Shredder Residue
+Accelerated Surveillance Recognition
+A
+LogLoss evaluation metric can have negative values.
+false
+true
+Only in image segmentation tasks
+Only when we have more than 2 classes
+A
+Neural Networks achieves better results using training method on GPU
+True
+False
+Only on Nvidia CUDA
+Only on convolutional neural networks
+B
+Who is the scientist asking the question “Can machines think?” in 1950?
+Nikola Tesla
+Alan Turing
+Albert Einstein
+Richard Hamming
+B
+Which of the following sentences are true about differences between machine learning and deep learning?
+Machine learning requires more ongoing human intervention to get results
+Machine learning systems take more time to set up but can generate results instantaneously
+Deep learning tends to require structured data and uses traditional algorithms like linear regression
+Deep learning technology enables more complex and autonomous programs
+A D
+Which of the following sentences are true about Deep Learning?
+Deep Learning and Machine Learning are unconnected two different subsets of Artificial Intelligence
+Deep learning is a type of Machine Learning which is a subset of Artificial Intelligence
+Machine Learning is a type of Deep Learning which is a subset of Artificial Intelligence
+Deep Learning is based on artificial neural networks
+B D
+Which of the following sentences are false about Machine Learning and Data Mining?
+Both are analytics processes
+Both are about learning from data so that we can improve decision making
+Both are a subset of artificial intelligence
+Both are good at pattern recognition
+C
+Which of the following applications use Machine Learning?
+Prediction
+Speech recognition
+Medical Diagnoses
+Statistical arbitrage
+A B C D
+What is the inspiration for the basic algorithm/model used in the development of important machine learning applications such as face recognition, voice recognition, home price prediction, cancer cell detection and credit risk scoring?
+Rain
+Colony
+Neuron
+Chromosome
+C
+Which hardware is most needed for the training of artificial intelligence models, as it allows to perform operations that require high computational power?
+RAM
+SSD
+CPU
+GPU
+D
+Which algorithms are used mainly in supervised machine learning?
+Linear Regression
+Naive Bayes
+Q-Learning
+k-means clustering
+A B
+Which of the following properties can say for the labeled data?
+Used in supervised machine learning
+Used in unsupervised machine learning
+Needs human/expert to annotate
+Relatively easy to get and store compared to unlabeled data
+C
+Which of the following sentences can say about Neural Networks?
+can be used for regression
+cannot be used in ensemble
+output values are always between 0 and 1
+can be used for classification
+A D
+Which of them are not a type of learning?
+Multi-Instance Learning
+Semi-Supervised Learning
+Semi-Unsupervised Learning
+Reinforcement Learning
+C
+Which of them are two main types of supervised learning?
+Classification
+Clustering
+Density Estimation
+Regression
+A D
+Which of the below problems Classification is better choice than Regression?
+Estimating gender
+Type of color
+Estimating sales
+Estimating value of a stock
+A B
+Which of the following definitions are true about Classification and Regression?
+A classification algorithm may predict a continuous value, but the continuous value is in the form of a probability for a class label
+Regression is the task of predicting a continuous quantity
+Classification predictions can be evaluated using root mean squared error, whereas regression predictions cannot
+Regression predictions can be evaluated using accuracy, whereas classification predictions cannot
+A B
+Which of the following algorithms are an unsupervised learning algorithms?
+Decision Trees
+Naive Bayes
+K-means clustering
+K-nearest neighbors
+C D
+Which of them are a type of Learning Techniques?
+Transfer Learning
+Active Learning
+Inductive Learning
+Transductive Learning
+A B
+Which name combination are true with respectively for the figure below? [1. Linear line; 2. Square function line; 3. Polynomial function line]
+Underfitted – Good Fit/Robust - Overfitted
+Underfitted – Overfitted - Good Fit/Robust
+Overfitted - Good Fit/Robust - Underfitted
+Overfitted - Underfitted – Good Fit/Robust
+A
+Which of the following definitions are not true?
+True Positive(TP): Values that are actually positive and predicted positive
+False Positive(FP): Values that are actually positive but predicted to negative
+False Negative(FN): Values that are actually positive but predicted to negative
+True Negative (TN): Values that are actually negative and predicted to negative
+B
+The definition „The difference between the measured value and true value” belongs to;
+Mean squared error
+Mean positive error
+Mean absolute error
+Root mean squared error
+C
+Which of the following formulas are true?
+True Positive Rate (TPR) = TP/(TP+FN)
+False Positive Rate (FPR) = FP /(FP+FN)
+False Negative Rate (FNR) = TN/(TP+FN)
+True Negative Rate (TNR) = TN/(TN+FP)
+A D
+Please fill in the blank „........ is the proportion of positive identifications was actually correct.”
+Accuracy
+Precision
+Recall
+Thresholding
+B
+If the entropy is high that means partitions in a classification are
+Useless
+Pure
+Not pure
+Low noise
+C
+Which of the definition is false about Decision Tree Classification Algorithm?
+It is a Supervised learning technique
+It can be used efficiently in Unsupervised learning technique
+It can be used for both classification and regression problems
+It is a graphical representation of all possible solutions to a decision based on certain conditions
+B
+Which of the techniques are used in Data Augmentation?
+Flip
+Rotation
+Scale
+Crop
+A B C D
+Which of the following applications can be done on the case missing value in datasets?
+Replacing with Mean/Median/Mode if dataset is suitable
+Using algorithms which support missing values
+Predicting the missing values
+All of the above
+D
+Which of the following are examples of bad dataset?
+Insufficient quantity of training data
+Non-representative training data
+Poor-quality data
+Irrelevant features
+A B C D
+Which of the following is not a step of Data Preprocessing?
+Data cleaning
+Data integration
+Data training
+None of the above
+D
+Which of the following statements are true about AUC - ROC Curve?
+AUC - ROC curve is a performance measurement for the classification problems
+AUC is a probability curve
+ROC represents the degree or measure of separability
+Higher the AUC means model is better at predicting 0 classes as 0 and 1 classes as 1
+A D
+Which of the following statements are not true about evaluation of Classification Models and Regression Models?
+Accuracy is a measure for classification and regression models
+Mean Squared Error (MSE) and Mean Absolute Error (MAE) can be used evaluating the regression models
+Confusion matrix is used for evaluation of classification model
+Confusion matrix is prediction results on a classification problem
+A
+Which of the following ways cannot be used to improve Machine Learning Models?
+Add more data
+Testing multiple models
+Averaging models
+None of the above
+D
