@@ -18,7 +18,7 @@ def load_questions(filename: str, number_of_answers: int):
             _correct_answers = f.readline().strip()
             _questions.append([_text.strip(), *_answers, _correct_answers])
     shuffle(_questions)
-    return _questions[:2]
+    return _questions
 
 
 if __name__ == '__main__':

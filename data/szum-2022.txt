@@ -250,3 +250,933 @@ Testing multiple models
 Averaging models
 None of the above
 D
+What is a problem when using raw HSV color model as information for our model?
+RGB is a simpler model for NNs and other models to understand. [50%]
+H value should be periodic and continuous, but in typical numerical representations it’s not.
+Hue and its Saturation are naturally correlated and our model will waste its resources on redundant information.
+HSB and HSL are strictly better options when compared to HSV.
+A B
+For which operation the training dataset is being used?
+Randomizing model's weights as preparation for training
+Adjusting model parameters to better represent the data
+Randomizing some of the model parameters to prevent overfitting
+Adjusting model hyperparameters to improve performance
+B
+For which operation the validation dataset is being used?
+Saving model to persistent memory for later use
+Improving parameters in previously learned model (i.e. fine tuning)
+Transferring knowledge from one model to another (i. e. transfer learning)
+Evaluating model's performance during its evolution
+D
+For which operation the test dataset is being used?
+Evaluating model's performance during its evolution
+Augmenting training and validation dataset
+Evaluating model's performance at the end of its evolution
+Adjusting model parameters to better represent the data
+C
+What is the precision formula for the binary problem?
+TP / (TP + FP)
+TP / (TP + FN)
+TP / (TP + TN + FP + FN)
+(TP + TN) / (TP + TN + FP + FN)
+A
+What is the recall formula for the binary problem?
+TP / (TP + FP)
+TP / (TP + FN)
+TP / (TP + TN + FP + FN)
+(TP + TN) / (TP + TN + FP + FN)
+B
+What is the accuracy formula for the binary problem?
+TP / (TP + FP)
+TP / (TP + FN)
+TP / (TP + TN + FP + FN)
+(TP + TN) / (TP + TN + FP + FN)
+D
+What affects the speed of epoch computation during neural network training?
+Size of train dataset
+Size of test dataset
+Learning rate
+Number of parameters
+A D
+How should the value of the loss function behave during neural network training?
+The value of the loss function should decrease
+The value of the loss function should increase
+The value of the loss function should be constant
+The value of the loss function does not matter
+A
+Which of these is true?
+sigmoid(2x) = (tanh(x) + 1)/2
+sigmoid(x) = tanh(x)+1
+sigmoid(x) = tanh(2x)+1
+2*sigmoid(2x) = tanh(x) + 1
+A D
+What type of annotations in segmentation are easy and quick to make and many algorithms support it?
+Points
+Rectangle-like
+Masks
+Segmentation
+B
+What image size is supported by networks the most?
+Square-like
+Rectangle-like
+Circle-like
+Other
+A
+What are the cons of RGBD 3D images?
+There is information only about one side of an object
+There are holes in images
+Currently, there is no hardware to efficiently analyze it
+All channels data are taken from a different angle
+A B
+What are two metrics which give much better information about the model performance than accuracy?
+recall
+prominence
+precision
+mediocrity
+A C
+How we call the way of training the model when we split the training dataset into two parts and for given value of k we choose k times another fold of the dataset for validating the results of training?
+minmax method
+kNN algorithm
+k fold cross-validation training
+Hidden-Markow models
+C
+In CNN what is the name of the method which expands the size of the output channel?
+max pooling
+unpooling
+decomposition
+pick and roll
+B
+What is a type 1 error?
+predicting negative, when it is positive
+predicting positive, when it is positive
+predicting positive, when it is negative
+predicting negative when it is negative
+C
+What is a type 2 error?
+predicting positive, when it is negative
+predicting negative when it is negative
+predicting negative, when it is positive
+predicting positive, when it is positive
+C
+What is a use case of one-hot encoding?
+in case of normalization time-series data
+in case of validating classification model
+in case of regularizing CNN model
+in case of classification to more than 2 classes
+D
+How to increase data size?
+Add noise
+Data transform
+Data merging
+Style transfer
+A B C D
+What may cause underfitting?
+Model too big
+Model too small
+Training too long
+Data too easy
+B D
+What may cause overfitting?
+Model too small
+Training too long
+Training too short
+Not enough data
+B D
+What type of text data the picture represents? [Is: 1, Great: 2, Dih: 1]
+Bag of words
+Word2vec
+Doc2vec
+GLoVe
+A
+What are the types of sound representation in audio data?
+GLoVe
+CBOW
+Spectrogram
+Raw audio stream
+C D
+What are the types of noise in input data?
+Gaussian noise
+Occlusion
+Text errors
+Motion blur
+A B C D
+Select methods that are classified as the unsupervised learning:
+Hierarchical clustering
+Meanshift
+Capsule Networks
+K-nearest neighbours
+A B
+Examples of supervised learning are:
+K-Nearest Neighbors
+Support Vector Machines
+Hierarchical clustering
+K-means
+A B
+When does the model diverge?
+The minima were skipped
+Model was not big enough
+There was too much data
+Data was not augmented
+A B
+Symptoms of underfitting are:
+Train loss doesn’t decrease
+Validation loss doesn’t get close to train loss
+Train accuracy close to 100%
+Validation loss decreases, then increases
+A B
+Select quality measures used for regression:
+Accuracy
+F1-score
+Loss
+mAP
+C
+We use the undermentioned formula to calculate:
+Mean squared error
+Explained variance score
+Loss
+R2score
+D
+We use the undermentioned formula to calculate:
+Dice coefficient (F1 score)
+Mean average precision
+Intersection over Union
+Loss
+A
+Which neural network type is useful for the sequence inputs?
+RNN
+Long-short term memory
+CNN
+Graph neural network
+A B
+To which problems Recurrent neural networks could be applied?
+Predicting image classes
+Predicting user product recommendations
+Predicting the next word in the sentence
+Generating new images
+B C
+Which method is most useful to find optimal window size and number of units in LSTM?
+genetic algorithms
+random search
+grid search
+using constant parameters from LSTM paper
+A
+Which of the listed axioms should distance function obey in metric learning?
+asymmetry
+non-negativity
+subadditivity
+identity of indiscernibles
+B C D
+Lasso can be interpreted as least-squares linear regression where (https://neptune.ai/blog/fighting-overfitting-with-l1-or-l2-regularization)
+weights are regularized with the L1 norm
+weights are regularized with the L2 norm
+the weights have a Gaussian prior
+the solution algorithm is simpler
+A
+Which of the following can help to reduce overfitting in an SVM classifier?
+Use of slack variables (e.g. param c)
+Normalizing the data
+High-degree polynomial features
+Setting a very low learning rate
+A
+Which of the following methods can achieve zero training error on any linearly separable dataset?
+Decision tree
+15-nearest neighbors
+Hard-margin SVM
+Perceptron
+A C D
+Which of the following activations functions can lead to vanishing gradients?
+ReLU
+Tanh
+Leaky ReLU
+None of the above
+B
+Which of the following metrics can be used for classification problems, but not for regression problems?
+Confusion matrix
+Root-mean-square error
+Mean square error
+F-score
+A D
+Which of the following is an advantage of end-to-end learning?
+It usually requires less data
+It doesn’t need hand crafted features
+It generally leads to lower bias
+None of the above
+B C
+Which of the following applications are typical for autoencoders?
+Image denoising
+Facial recognition
+Acquiring the semantic meaning of words
+Dimensionality reduction for data visualization
+A B C D
+Which of the following techniques can be used to reduce model overfitting?
+Data augmentation
+Dropout
+Batch normalization
+Using Adam instead of SGD
+A B C
+Which of the datasets would you call heterogeneous?
+Medical images gathered in one hospital on one machine
+Medical images collected in various hospitals
+Medical images labelled by doctors
+Synthetic generated data
+B
+What are the types of biases which can occur during data sampling?
+Selection bias
+Undercoverage bias
+Overcoverage
+Survivorship bias
+A B D
+How can we deal with missing data?
+Deleting rows with empty data
+Substituting missing cells with column mean, mean of nearest neighbors or other metrics
+Using regression to determine the value of missing cell
+Assigning an unique value for empty cells (f.e. “undefined”)
+A B C D
+For unsupervised learning, which of the following deep neural networks would you choose?
+Autoencoder
+Deep belief neural network
+CNN
+RNN
+A
+The perceptron algorithm will converge:
+If the data is linearly separable
+As long as you initialize theta ( θ ) to all 0
+Even if the data is linearly inseparable
+Always
+A
+Which model best describes the equation shown in the figure?
+linear
+polynomial (3rd degree)
+polynomial (2nd degree)
+sigmoid
+B
+What is overfitting?
+Training model with low learning rate so it can reach global optimum.
+Negative phenomenon when the model is fitting too much on training data.
+Increasing number of training epochs so model can present better results.
+Increasing size of a neural network.
+B
+What is underfitting?
+Reducing size of a neural network
+Situation when validation loss is getting near train loss.
+Situation when model is not learned enough.
+Situation when model is getting good results on data other than from the used dataset.
+C
+How can we recognize overfitting?
+Validation loss is starting to increase when train loss is still decreasing.
+Model is taking more and more time to train on consecutive epochs.
+Model is less and less time to train on consecutive epochs.
+Validation loss is getting near train loss.
+A
+For what kind of data Convolutional Neural Networks (CNN) are usually used:
+Text
+Single dimensional numerical vectors
+Convolutional Neural Networks are the best for any kind of data.
+Images
+D
+What is data standardization?
+Scaling the data so it has mean value around 0 and standard deviation around 1.
+Removing noise from collected data.
+Scaling data using one of the scaling standards.
+Adding noise to collected data.
+A
+What is the differences between supervised and unsupervised learning?
+Unsupervised learning doesn’t use gradient descent.
+Unsupervised learning doesn't use labeled data.
+Unsupervised learning is used only in regression problems.
+Unsupervised learning is used only in clustering problems.
+B
+Select the reason(s) of model diverge (during training):
+Wrong loss function
+Wrong data
+Too big dataset
+Bad hyperparameters
+A B D
+What is the difference between online and offline data augmentation?
+Online augmentation means preprocessing data on designated server over the network.
+Offline augmentation means preprocessing data using designated hardware which cannot be accessed over the network.
+Online augmentation means preprocessing data before training.
+Offline augmentation means preprocessing data before training.
+D
+What is the characteristic of the ensemble learning method?
+It has very fast loss convergence in regression problems.
+It combines multiple models to solve the problem.
+It uses the k-folds algorithm for optimization.
+It requires the k-fold preprocessing on the input data.
+B
+What is the machine learning input data transformed to in the end?
+Numbers
+Images
+Text
+Characters
+A
+What are the learning methods in machine learning?
+Supervised learning
+Standard learning
+Unsupervised learning
+Reinforcement learning
+A C D
+What are the usual data subsets?
+Free set
+Train set
+Val set
+Test set
+B C D
+What are some examples of deep learning libraries?
+Numpy
+Keras
+matplotlib
+opencv
+B
+Name some quality measures of classification problem
+accuracy
+training
+precision
+visibility
+A C
+Give some ML problem examples
+Classification
+Detection
+Segmentation
+Searching
+A B C D
+What should the test set contain?
+real data
+noise
+easy/hard subsets
+training data
+A C
+What is AI?
+Maths
+Numbers
+Images
+Text
+A B
+What is k-means clustering?
+Unsupervised machine learning method
+Deep learning method
+Collection of similar data points aggregated together
+Artificial neural network
+A C
+What are the parts of a typical machine learning workflow?
+Get data
+Prepare data
+Train model
+Manipulate data
+A B C D
+Which of the following methods are examples of supervised learning?
+Support Vector Machines
+K-means Clustering
+Decision Trees
+Novelty/Outlier Detection
+A C
+Which of the following methods can be used for large scale learning?
+Ridge Regression
+Stochastic Gradient Descent
+Neural Networks
+Decision Trees
+B C
+Which of the following are unsupervised learning methods?
+Autoencoders
+Decision Trees
+Generative Adversarial Networks
+Bayesian models
+A C
+Which of the following can  be the reasons for low-accuracy result of testing sets and high-accuracy result of training sets?
+overfitting
+forget to shuffle data
+wrong labels for data
+small training set for many classification
+A B C D
+How to improve your underfitting model?
+shuffle the data again
+increase data sets
+reduce the complicity of model
+take regularization
+A B C D
+How to improve your overfitting model?
+increase the number of features
+improve the quality of features
+increase the complicity of model suitably
+decrease regularization parameters
+B C D
+Which of the following can be the type of Numerical data?
+Boolean
+Vector
+Matrix
+Complex
+A B C D
+Which does “entropy”mean in machine learning?
+the measures of impurity, disorder or uncertainty in a bunch of examples.
+Optimized hyperparameters
+Average Overfit Coefficient
+Average Underfit Coefficient
+A
+We have 8 ball and one of them is heavier than others. Besides, we have balance (scale) to weigh them. How many times do we need to use balance (scale) to find the heaviest ball at most?
+2
+3
+4
+5
+A
+Which of the following can be the type of Noise?
+Incorrect labels
+Gaussian numerical noise
+Misplaced annotations
+Ambiguous samples
+A B C D
+Which of the following are typical conversions?
+Mean scaling
+Min/max scaling
+Quantile normalization
+Gaussian mapping
+A B C D
+How to process heterogeneous data?
+Collect better data
+Transform to common domain
+Normalize each sample independently
+Add some necessary  noise
+A B C
+What are the best ways for us if we meet unsupervised hard example mining?
+Train the model
+Find samples classified badly
+Increase number/weight of these samples
+Repeat whole procedure
+A B C D
+Which of the following quality measures are measures for classification?
+Confusion matrix
+Mean absolute error
+F1-score
+R2 score
+A C
+Which are the types of artificial neural networks?
+Capsule Networks
+Convolutional Networks
+Generative Adversarial Networks
+Evolving Networks
+A B C D
+Methods of hyperparameter optimization:
+Bayesian optimization
+Random search
+Gaussian mapping
+Grid search
+A B D
+Which of these loss functions does not require one-hot encoding?
+Categorical Cross-Entropy Loss
+Sparse Multiclass Cross-Entropy Loss
+Binary Cross-Entropy loss
+Mean Squared Logarithmic Error Loss
+B D
+What task can Machine Learning do?
+Decision making & assistance
+Data search & organizing
+Image, video analysis
+Image, sound, text generation
+A B C D
+Which method can be used in  Machine Learning ?
+K-Nearest Neighbor,
+Support Vector Machines
+Bayesian models
+Artificial neural networks
+A B C D
+If you are processing some face photos, and what kind of date from people’s strange faces” may  belong to ?
+they are noise
+they are “hard data”
+they are “ambiguous data”
+they are normal data
+A B C D
+What quality metrics do we often use  ?
+accuracy,
+precision
+recall,
+F1-score
+A B C D
+Which  following  description about ROC and AUC is correct  ?
+ROC means “receiver operating characteristic”
+AUC meas “area under curve(ROC)”
+AUC has the value between [0,1],and the bigger it is ,the better result we have .
+ROC is a linear function
+A B C
+Which following description about ‘Cross-validation’ is correct ?
+it returns average result
+it uses external test data for final evaluation
+k-fold, leave-one-out are the types of it
+we often use it when out date set  is not big enough
+A B C D
+Here is the graphic about learning rate,and which one  is the lowest learning rate? [Tip: Blue one]
+a.yellow one
+b.blue one
+c.green one
+d.red one
+A B C D
+When will our model diverge?
+Wrong data and loss function
+Poor initialization
+Skipped minima
+Bad hyperparameters
+A B C D
+What’s the reason for Model does not fit to data?
+Model too small
+Training too short
+Data too difficult
+Choosing wrong loss function
+A B C D
+What’s the reason for Model fits too much data?
+Too little variety of data
+Augmentation too simple
+Model too big
+Training too long
+A B C D
+Which method can be used as loss function?
+Explained variance score
+Mean absolute error
+Mean squared error
+Mean squared logarithmic error
+A B C D
+Which environment is often used in Machine Learning?
+PyCharm
+Visual-Studio
+Jupyter
+IPython
+A B C D
+Which one does not belong to Artificial neural networks?
+[Convolutional neural network image]
+[Neural network image]
+[Convolutional neural network image]
+[clustering result image]
+D
+Most popular technologies used in Machine Learning
+C#
+Python
+JavaScript
+MATLAB
+B D
+Which sentences are true for training set?
+Should be large
+May contain errors
+Can’t contain noise
+May change during training
+A D
+Examples of supervised learning are:
+K-means
+Linear regression
+Self-organizing maps
+Decision trees
+A B D
+Input data in machine learning can be:
+Visual
+Audio
+Text
+Numerical
+A B C D
+Which sentences are true?
+Noise always causes wrong predictions
+Some noise can help with generalization
+Some incorrect data can help with generalization
+Incorrect data stops machine learning models from learning
+B C
+Which of the following is true for the data set?
+Data set should be sorted
+The examples should be highly correlated to each other
+There should be at least a couple of examples for each class
+The number of examples for each class should be approximately the same
+C D
+What can be done with “hard” data?
+Remove it
+Add a separate “hard” class
+Start adding a bit of “hard” data during the training
+Hard data should never be treated other than simple data
+A B C
+Assuming we have data from two sources, which of the following is true?
+The data does not require pre-processing
+The data should be split into two subsets, one for each data source
+It may be beneficial to transform data to a common domain
+Normaling each sample independently never helps
+C
+Which of the following is true?
+One-hot is a vector of confidence
+One-hot is a way of encoding labels
+One-hot’s values range from 0 to 10
+One-hot is not used anymore in modern machine learning systems
+B
+How to measure the performance of your model?
+F-score
+Precision, recall
+Sensitivity, specificity
+Accuracy
+A B C D
+Which of the following is output data noise / errors?
+Compression artifacts
+White noise
+Incorrect labels
+Misplaced annotations
+C D
+Which of the following is true for hyperparameters?
+Don’t affect the training
+Are optimized during training
+Can be manually set
+Are always constant for a data set
+C
+Which of the following is a type of a neural network?
+Recurrent Neural Network (RNN)
+Convolutional Neural Network (CNN)
+K-Neural Network (k-NN)
+Multi-layer Perceptron (MLP)
+A B D
+Which of the following can represent words?
+Word2Vec
+AdaGrad
+Dustox
+One-hot
+A D
+What is ground truth?
+Piece of data set of environmental data
+Output of the confidence function
+The label for an example known in advance
+Synonym for loss
+C
+Which of the following are correct ways of data augmentation for images?
+Rotation
+Reflection
+Resizing
+Translation
+A B C D
+What is data normalization?
+Cleaning the data
+Creating more data
+Correcting wrong labels
+Adjusting values measured on different scales to a common scale
+A D
+What are typical conversions in data normalization?
+Absolute value
+Multiplying by mean value
+Mean scaling
+Min/max scaling
+C D
+How many subnetworks make up GAN model
+1
+2
+3
+4
+B
+How can you deal with images that differ in size in the dataset?
+Don’t do anything as even simple CNN can deal with images of different sizes
+Rescale them to the same dimensions
+Rescale them with original aspect ratio and pad with black
+Rescale them with original aspect ratio and pad with mean colour of the image
+B C D
+Typical Machine Learning workflow involves:
+Testing model
+Collecting data
+Training model
+Preparing data
+A B C D
+Which sentence is true about machine learning methods?
+Includes only artificial neural network
+One type of them are Bayesian models
+Decision trees are considered one of them
+Linear models cannot be used as machine learning method
+B C
+What can be GAN used for?
+Generating artificial noise in images
+Automatic generating new images
+Performing data normalization using mean scaling
+Optimization of hyperparameters
+A B
+What is early stopping?
+Method used to stop the gradient flow to lower layers of the model to prevent overfitting
+Stopping the model training after validation error starts to rise
+Stopping the model training after train error reaches 0 as it can’t get any better
+Stopping of the model’s training after one, full dataset iteration
+B
+A non-linear transformation that we do over the input before sending it to the next layer of neurons or finalizing it as output is:
+Forward pass
+Backpropagation
+Activation function
+Backward pass
+C
+Types of cross-validation methods:
+k-fold cross-validation
+alpha-beta cross-validation
+leave-one-out cross-validation
+nested cross-validation
+A C D
+Examples of hyperparameters:
+Number of neural network layers
+Neural network weights
+Learning rate
+F-score
+A C
+What is ROC?
+Receiver Operating Characteristic
+Representation Of Classification
+Visualization of classification efficiency for constant threshold
+Visualization of classification efficiency for all possible thresholds
+A
+Which sentences are true for validation set?
+Is used for training
+Typically is smaller than training set
+Should include incorrect data
+Must be representative to our goals
+B D
+Which sentences are true for test set?
+Should include only real data
+You must never look at this data during development
+Can share data with training and validation set
+Must be bigger than training set
+A B
+Examples of unsupervised learning are:
+K-means
+K-Nearest Neighbor
+Hierarchical clustering
+Bayesian models
+A C
+Part of data preparation can be:
+Dataset building
+Data augmentation
+Model building
+Data normalization
+A B D
+What is a method of increasing the dataset size?
+Adding noise
+Data generation
+Data transforms
+Style transfer
+A B C D
+What can be done with irrelevant parts of the data?
+Remove it
+Replace it with the background
+Replace it with something relevant
+Replace it with surroundings
+A B C D
+Which of the following libraries are often used in code related to machine learning?
+Keras
+Flask
+NumPy
+TensorFlow
+A C D
+Which of the following is true for data generation?
+Dataset cannot contain generated data
+Data in dataset can be generated using video games
+Data in dataset can be generated using neural networks
+Combining both generated and non-generated data in one class always leads to problems
+B C
+Which of the following is an optimization method?
+AdaGrad
+ADAM
+EVA
+Stochastic Gradient Descent
+A B D
+Which of the following is input data noise / errors?
+Incorrect labels
+Compression artifacts
+White noise
+Misplaced annotations
+A B C D
+What to do with highly correlated data (e.g. consecutive video frames)?
+Remove part of it if dataset is big
+Use part of it as train datasets, and the rest as test or val dataset
+Assign lower weights to it
+Normalize it
+C D
+How to represent an image in the data set?
+Using feature vector
+Using spectrogram
+Using bag of pixels
+Using a 3-dimensional vector for each pixel
+A D
+How to analyse video data?
+Use one-hot method
+Use a 64-dimensional vector for each pixel
+Analyse a constant number of frames
+Analyse series of frames using recurrent neural network
+C D
+How many hidden layers can a perceptron have?
+0
+1
+2
+10
+A
+What to do when the dataset is small?
+Nothing can be done
+Add more layers
+Use transfer learning
+Augment the data
+C D
+What is/are the most important feature(s) of test set?
+Must not be used in any way during development
+Contains only real data
+Testing should be fast
+Should be small
+A B
+What are the typical number ranges for data normalization
+[0, 1]
+[0, 100]
+[-1, 1]
+N(0,1)
+A C D
+Which of the following are types of label relationships
+Single-label
+Multi-label
+Independent labels
+Ontology
+C D
+When during NN training the gradients are calculated?
+During simplex phase
+During forward pass
+During backpropagation
+When batch norm operator is called
+C
+What is a spectrogram?
+Representation of signal frequencies in time
+Transformation of raw signal that is often used as an input to the model
+Weight unit
+Visualization method for classification efficiency measurements
+A
+Which are the example loss metrics used in regression?
+MSE - Mean square error
+MII - Mean Irrelevancy Index
+MAE - Mean absolute error
+MEE - Mean error estimate
+A C
+Which networks are inspired by biological processes in that the connectivity pattern between neurons resembles the organization of the animal visual cortex?
+Multi-layer perceptron
+Capsule Networks
+Convolutional nets
+Recurrent nets
+C
+What is true about underfitting?
+It happens when model is good at analyzing training data, but has problems with analyzing new data.
+Can be avoided by using bigger model.
+It can’t occur if you use mean scaling
+It occurs when the model does not fit the data enough.
+B D
+What is true about data labels?
+Always have to be independent
+Can be correlated
+Can be only of boolean type (yes/no)
+One data set element can only have one label
+B
+Cross-validation is used for:
+Data preprocessing
+Hyperparameter adjustment
+Model evaluation
+It is not used in machine learning
+C
+Hyperperameter optimization methods:
+Grid search
+Random search
+Stochastic gradient descent
+Genetic algorithms
+A B D
+What is confusion matrix?
+Spectrogram of training data
+Visualization method for classification efficiency
+Last layer of recurrent neural network
+Method of text representation
+B
+What is AUC?
+Average Underfit Coefficient
+Area Under Curve
+One of the hyperparameters
+Metric for classification efficiency measurement
+B
