@@ -123,7 +123,7 @@ Used in supervised machine learning
 Used in unsupervised machine learning
 Needs human/expert to annotate
 Relatively easy to get and store compared to unlabeled data
-C
+A C
 Which of the following sentences can say about Neural Networks?
 can be used for regression
 cannot be used in ensemble
@@ -430,13 +430,13 @@ F1-score
 Loss
 mAP
 C
-We use the undermentioned formula to calculate:
+We use the undermentioned formula to calculate [1 - (sum(i...n-1; y1 - y^i)^2 / (sum(i...n-1; y1 - y_i)^2]:
 Mean squared error
 Explained variance score
 Loss
 R2score
 D
-We use the undermentioned formula to calculate:
+We use the undermentioned formula to calculate [(2|X U Y|) / (|X| + |Y|)] :
 Dice coefficient (F1 score)
 Mean average precision
 Intersection over Union
@@ -699,7 +699,7 @@ increase the number of features
 improve the quality of features
 increase the complicity of model suitably
 decrease regularization parameters
-B C D
+B C
 Which of the following can be the type of Numerical data?
 Boolean
 Vector
@@ -807,7 +807,7 @@ a.yellow one
 b.blue one
 c.green one
 d.red one
-A B C D
+B
 When will our model diverge?
 Wrong data and loss function
 Poor initialization
